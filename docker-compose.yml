@@ -1,0 +1,22 @@
+services:
+  # Define el servicio web basado en la imagen que creará el Dockerfile
+  a64-estudio-web:
+    # Construye la imagen usando el Dockerfile que se encuentra en el directorio actual ('.')
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Asigna un nombre claro al contenedor
+    container_name: a64-estudio-web-container
+
+    # Mapea el puerto 8080 de tu máquina local al puerto 80 del contenedor (donde Nginx sirve la aplicación)
+    ports:
+      - "8080:80"
+
+    # Configura el contenedor para que se reinicie automáticamente si falla, 
+    # a menos que sea detenido manualmente.
+    restart: unless-stopped
+
+    # Etiqueta el servicio para darle una descripción legible
+    labels:
+      - "com.example.description=A64 Estudio React/Vite web application served by Nginx"
