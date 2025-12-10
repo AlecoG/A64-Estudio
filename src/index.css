@@ -1,0 +1,6 @@
+/* Directivas de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Opcional: Estilos globales si son necesarios, pero Tailwind ya maneja casi todo. */
