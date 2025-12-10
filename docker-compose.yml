@@ -1,6 +1,6 @@
 services:
   # Define el servicio web basado en la imagen que creará el Dockerfile
-  a64-estudio-web:
+  web:
     # Construye la imagen usando el Dockerfile que se encuentra en el directorio actual ('.')
     build:
       context: .
