@@ -297,3 +297,11 @@ export default function A64Estudio() {
       <a 
         href={whatsappLink}
         target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all z-40"
+      >
+        <Phone size={24} />
+      </a>
+    </div>
+  );
+}
