@@ -101,73 +101,71 @@ export default function A64Estudio() {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
-        {isMenuOpen && (
-          <div className="md:hidden border-b dark:border-zinc-800">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-zinc-950">
-              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-3 py-3 rounded-md text-base font-medium hover:bg-gray-50 dark:hover:bg-zinc-900">Inicio</button>
-              <button onClick={() => scrollToSection('servicios')} className="block w-full text-left px-3 py-3 rounded-md text-base font-medium hover:bg-gray-50 dark:hover:bg-zinc-900">Servicios</button>
-              <button onClick={() => scrollToSection('ubicacion')} className="block w-full text-left px-3 py-3 rounded-md text-base font-medium hover:bg-gray-50 dark:hover:bg-zinc-900">Ubicación</button>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block w-full text-center mt-4 bg-blue-600 text-white px-3 py-3 rounded-lg text-base font-medium">
-                Escribir al WhatsApp
-              </a>
+          {isMenuOpen && (
+            <div className="md:hidden border-b dark:border-zinc-800">
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-zinc-950">
+                <button onClick={() => scrollToSection('home')} className="block w-full text-left px-3 py-3 rounded-md text-base font-medium hover:bg-gray-50 dark:hover:bg-zinc-900">Inicio</button>
+                <button onClick={() => scrollToSection('servicios')} className="block w-full text-left px-3 py-3 rounded-md text-base font-medium hover:bg-gray-50 dark:hover:bg-zinc-900">Servicios</button>
+                <button onClick={() => scrollToSection('ubicacion')} className="block w-full text-left px-3 py-3 rounded-md text-base font-medium hover:bg-gray-50 dark:hover:bg-zinc-900">Ubicación</button>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="block w-full text-center mt-4 bg-blue-600 text-white px-3 py-3 rounded-lg text-base font-medium">
+            Escribir al WhatsApp
+                </a>
+              </div>
             </div>
-          </div>
-        )}
-      </nav>
+          )}
+              </nav>
 
-      {/* Hero Section */}
-      <section id="home" className="pt-24 pb-12 sm:pt-32 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-semibold mb-6">
-              <Zap size={16} />
-              <span>Abierto en Vedado</span>
-            </div>
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
-              Estilo Urbano <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-                A64 Estudio
-              </span>
-            </h1>
-            <p className={`text-lg mb-8 leading-relaxed ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              Más que un corte, es tu imagen. Especialistas en fades, diseños urbanos y cuidado de barba. 
-              Ambiente relajado al aire libre en el corazón del Vedado.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity"
-              >
-                <Phone size={20} />
-                Reservar Turno
-              </a>
-              <button 
-                onClick={() => scrollToSection('servicios')}
-                className={`px-8 py-4 rounded-xl font-bold border transition-colors ${darkMode ? 'border-zinc-700 hover:bg-zinc-800' : 'border-gray-300 hover:bg-gray-50'}`}
-              >
-                Ver Precios
-              </button>
-            </div>
-          </div>
-          <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
-            <img 
-              src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1474&q=80" 
-              alt="Barber working on a fade" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className={`absolute inset-0 bg-gradient-to-t ${darkMode ? 'from-zinc-950/80' : 'from-black/50'} to-transparent`}></div>
-            <div className="absolute bottom-6 left-6 text-white">
-              <p className="font-bold text-lg">Cortes de Precisión</p>
-              <p className="text-sm opacity-90">Estilo & Actitud</p>
-            </div>
-          </div>
-        </div>
-      </section>
+                      <section id="home" className="pt-24 pb-12 sm:pt-32 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                      <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 ${darkMode ? 'bg-[#0b1d33] text-blue-400' : 'bg-blue-50 text-blue-600'}`}>
+                      <Zap size={16} />
+                      <span>Abierto en Vedado</span>
+                      </div>
+                      <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+                      Estilo Urbano <br />
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                    A64 Estudio
+                      </span>
+                      </h1>
+                      <p className={`text-lg mb-8 leading-relaxed ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                      Más que un corte, es tu imagen. Especialistas en fades, diseños urbanos y cuidado de barba. 
+                      Ambiente relajado al aire libre en el corazón del Vedado.
+                      </p>
+                      <div className="flex flex-col sm:flex-row gap-4">
+                      <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold transition-colors ${darkMode ? 'bg-white text-black hover:bg-gray-100' : 'bg-black text-white hover:bg-zinc-800'}`}
+                      >
+                    <Phone size={20} />
+                    Reservar Turno
+                      </a>
+                      <button 
+                    onClick={() => scrollToSection('servicios')}
+                    className={`px-8 py-4 rounded-xl font-bold border transition-colors ${darkMode ? 'border-zinc-700 hover:bg-zinc-800' : 'border-gray-300 hover:bg-gray-50'}`}
+                      >
+                    Ver Precios
+                      </button>
+                      </div>
+                    </div>
+                    <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
+                      <img 
+                      src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1474&q=80" 
+                      alt="Barber working on a fade" 
+                      className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-t ${darkMode ? 'from-zinc-950/80' : 'from-black/50'} to-transparent`}></div>
+                      <div className="absolute bottom-6 left-6 text-white">
+                      <p className="font-bold text-lg">Cortes de Precisión</p>
+                      <p className="text-sm opacity-90">Estilo & Actitud</p>
+                      </div>
+                    </div>
+                    </div>
+                      </section>
 
-      {/* Services Section */}
+                      {/* Services Section */}
       <section id="servicios" className={`py-20 ${darkMode ? 'bg-zinc-900/50' : 'bg-gray-50'}`}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -229,7 +227,7 @@ export default function A64Estudio() {
                   <MapPin className="text-blue-500 mt-1" size={24} />
                   <div>
                     <h4 className={`font-bold ${!darkMode && 'text-white'}`}>Dirección</h4>
-                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-300'}`}>Calle A #123, e/ 5ta y Calzada, Vedado</p>
+                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-300'}`}>Calle A #123, e/ 5ta y , Vedado</p>
                     <p className={`text-sm ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>(Portal de la casa A64)</p>
                   </div>
                 </div>
