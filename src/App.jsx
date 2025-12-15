@@ -18,7 +18,7 @@ export default function A64Estudio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Número de teléfono para WhatsApp (CAMBIAR ESTO POR EL REAL)
-  const phoneNumber = "5350000000"; 
+  const phoneNumber = "5353717253"; 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=Hola,%20quisiera%20agendar%20un%20turno%20en%20A64%20Estudio.`;
 
   // Efecto para manejar el modo oscuro
@@ -173,7 +173,7 @@ export default function A64Estudio() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Nuestros Servicios</h2>
             <p className={`max-w-2xl mx-auto ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              Calidad profesional en un ambiente descontracturado.
+              Calidad profesional en un ambiente empingao.
             </p>
           </div>
 
@@ -229,7 +229,7 @@ export default function A64Estudio() {
                   <MapPin className="text-blue-500 mt-1" size={24} />
                   <div>
                     <h4 className={`font-bold ${!darkMode && 'text-white'}`}>Dirección</h4>
-                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-300'}`}>Calle Principal #123, e/ A y B, Vedado</p>
+                    <p className={`${darkMode ? 'text-gray-400' : 'text-gray-300'}`}>Calle A #123, e/ 5ta y Calzada, Vedado</p>
                     <p className={`text-sm ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>(Portal de la casa A64)</p>
                   </div>
                 </div>
